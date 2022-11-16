@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Querys>
+    
+    <!-- Admin Querys  -->
+    <query id ="validate_admin"> <![CDATA[SELECT * FROM admin WHERE email = ? AND password = ?;]]> </query>
+    <query id ="insert_admin"> <![CDATA[INSERT INTO admin(name,nic,email,password,manager_id,branch_id) VALUES (?,?,?,?,?,?);]]> </query>
+    <query id ="get_all_admin"> <![CDATA[SELECT * FROM admin WHERE manager_id = 1;]]> </query>
+    <query id ="select_admin"> <![CDATA[SELECT * FROM admin WHERE id = ?;]]> </query>
+    <query id ="get_name_and_image_admin"> <![CDATA[SELECT id,name,image FROM admin WHERE id = ?;]]> </query>
+    <query id ="delete_admin"> <![CDATA[DELETE FROM admin WHERE id = ?;]]> </query>
+    <query id ="update_admin"> <![CDATA[UPDATE admin SET name = ?, nic = ?, email = ?, password = ?, branch_id = ? WHERE id = ?;]]> </query>
+    <query id ="update_profile_image_and_data_admin"> <![CDATA[UPDATE admin SET name = ?, nic = ?, email = ?, image = ?  WHERE id = ? ;]]> </query>
+    <query id ="update_profile_data_admin"> <![CDATA[UPDATE admin SET name = ?, nic = ?, email = ?  WHERE id = ? ;]]> </query>
+    <query id ="count_admin"> <![CDATA[SELECT COUNT(*) FROM admin;]]> </query>
+    <query id ="select_change_password_admin"> <![CDATA[SELECT * FROM admin WHERE id = ? AND password = ?;]]> </query>
+    <query id ="chamge_password_admin"> <![CDATA[UPDATE admin SET password = ? WHERE id = ? ;]]> </query>
+    
+    
+    
+    <!-- Agent Querys  -->
+    <query id ="validate_agent"> <![CDATA[SELECT * FROM agent WHERE email = ? AND password = ?;]]> </query>
+    <query id ="insert_agent"> <![CDATA[INSERT INTO agent(name,nic,email,password,branch_id) VALUES (?,?,?,?,?);]]> </query>
+    <query id ="get_all_agent"> <![CDATA[SELECT * FROM agent;]]> </query>
+    <query id ="select_agent"> <![CDATA[SELECT * FROM agent WHERE id = ?;]]> </query>
+    <query id ="get_name_and_image_agent"> <![CDATA[SELECT id,name,image FROM agent WHERE id = ?;]]> </query>
+    <query id ="delete_agent"> <![CDATA[DELETE FROM agent WHERE id = ?;]]> </query>
+    <query id ="update_agent"> <![CDATA[UPDATE agent SET name = ?, nic = ?, email = ?, password = ?, branch_id = ? WHERE id = ? ;]]> </query>
+    <query id ="update_profile_image_data_agent"> <![CDATA[UPDATE agent SET name = ?, nic = ?, email = ?, image = ? WHERE id = ? ;]]> </query>
+    <query id ="update_profile_data_agent"> <![CDATA[UPDATE agent SET name = ?, nic = ?, email = ? WHERE id = ? ;]]> </query>
+    <query id ="count_agent"> <![CDATA[SELECT COUNT(*) FROM agent;]]> </query>
+    <query id ="select_change_password_agent"> <![CDATA[SELECT * FROM agent WHERE id = ? AND password = ?;]]> </query>
+    <query id ="change_password_agent"> <![CDATA[UPDATE agent SET password = ? WHERE id = ? ;]]> </query>
+    
+    
+    
+    <!-- SIM Querys  -->
+    <query id ="insert_sim"> <![CDATA[INSERT INTO sim(number,status,customer_nic) VALUES (?,?,?);]]> </query>
+    <query id ="get_all_sim"> <![CDATA[SELECT * FROM sim;]]> </query>
+    <query id ="select_sim"> <![CDATA[SELECT * FROM sim WHERE id = ?;]]> </query>
+    <query id ="delete_sim"> <![CDATA[DELETE FROM sim WHERE id = ?;]]> </query>
+    <query id ="update_sim"> <![CDATA[UPDATE sim SET number = ?, customer_nic = ? WHERE id = ? ;]]> </query>
+    <query id ="to_active_sim"> <![CDATA[UPDATE sim SET status = ? WHERE id = ? ;]]> </query>
+    <query id ="to_deactive_sim"> <![CDATA[UPDATE sim SET status = ? WHERE id = ? ;]]> </query>
+    <query id ="get_sim_by_nic"> <![CDATA[SELECT * FROM sim where customer_nic= ?;]]> </query>
+    <query id ="get_sim_number"> <![CDATA[SELECT number FROM sim WHERE id = ?;]]> </query>
+    <query id ="count_sim"> <![CDATA[SELECT COUNT(*) FROM sim;]]> </query>
+    <query id ="count_active_sim"> <![CDATA[SELECT COUNT(*) FROM sim WHERE status = '1';]]> </query>
+    <query id ="count_deactive_sim"> <![CDATA[SELECT COUNT(*) FROM sim WHERE status = '0';]]> </query>
+    
+    
+    
+    <!-- Package Type Querys  -->
+    <query id ="insert_package_type"> <![CDATA[INSERT INTO packagetype(name) VALUES (?);]]> </query>
+    <query id ="get_all_package_type"> <![CDATA[SELECT * FROM packagetype;]]> </query>
+    <query id ="select_package_type"> <![CDATA[SELECT * FROM packagetype WHERE id = ?;]]> </query>
+    <query id ="delete_package_type"> <![CDATA[DELETE FROM packagetype WHERE id = ?;]]> </query>
+    <query id ="update_package_type"> <![CDATA[UPDATE packagetype SET name = ? WHERE id = ? ;]]> </query>
+    <query id ="get_package_type_name"> <![CDATA[SELECT name FROM packagetype WHERE id = ?;]]> </query>
+    
+    
+    
+    <!-- Package Querys  -->
+    <query id ="insert_package"> <![CDATA[INSERT INTO package(name,description,price,validity_period,any_data,night_data,package_type) VALUES (?,?,?,?,?,?,?);]]> </query>
+    <query id ="get_all_package"> <![CDATA[SELECT * FROM package;]]> </query>
+    <query id ="select_package"> <![CDATA[SELECT * FROM package WHERE id = ?;]]> </query>
+    <query id ="delete_package"> <![CDATA[DELETE FROM package WHERE id = ?;]]> </query>
+    <query id ="update_package"> <![CDATA[UPDATE package SET name = ?, description = ?, price = ?, validity_period = ?, any_data = ?, night_data = ?, package_type = ? WHERE id = ? ;]]> </query>
+    <query id ="get_all_sim_package"> <![CDATA[SELECT * FROM package WHERE id IN (SELECT package_id FROM simpackage WHERE sim_id = ?);]]> </query>
+    <query id ="sim_package_active"> <![CDATA[INSERT INTO simpackage(sim_id,package_id) VALUES (?,?);]]> </query>
+    <query id ="sim_package_deactive"> <![CDATA[DELETE FROM simpackage WHERE sim_id = ? AND package_id = ?;]]> </query>
+    <query id ="count_package"> <![CDATA[SELECT COUNT(*) FROM package;]]> </query>
+    <query id ="update_rental_package"> <![CDATA[UPDATE simpackage SET package_id = ? WHERE sim_id = ? ;]]> </query>
+    <query id ="get_all_package_by_type"> <![CDATA[SELECT * FROM package  Where package_type = ? ;]]> </query>
+    
+    
+    
+    <!-- Services Type Querys  -->
+    <query id ="insert_services_type"> <![CDATA[INSERT INTO servicetype(name) VALUES (?);]]> </query>
+    <query id ="get_all_services_type"> <![CDATA[SELECT * FROM servicetype;]]> </query>
+    <query id ="select_services_type"> <![CDATA[SELECT * FROM servicetype WHERE id = ?;]]> </query>
+    <query id ="delete_services_type"> <![CDATA[DELETE FROM servicetype WHERE id = ?;]]> </query>
+    <query id ="update_services_type"> <![CDATA[UPDATE servicetype SET name = ? WHERE id = ? ;]]> </query>
+    <query id ="get_services_type_name"> <![CDATA[SELECT name FROM servicetype WHERE id = ?;]]> </query>
+    
+    
+    
+    <!-- Services Querys  -->
+    <query id ="insert_services"> <![CDATA[INSERT INTO services(name,description,servicetype_id) VALUES (?,?,?);]]> </query>
+    <query id ="get_all_services"> <![CDATA[SELECT * FROM services;]]> </query>
+    <query id ="select_services"> <![CDATA[SELECT * FROM services WHERE id = ?;]]> </query>
+    <query id ="delete_services"> <![CDATA[DELETE FROM services WHERE id = ?;]]> </query>
+    <query id ="update_services"> <![CDATA[UPDATE services SET name = ?, description = ?, servicetype_id = ?  WHERE id = ? ;]]> </query>
+    
+    
+    
+    <!-- Customer Querys  -->
+    <query id ="validate_customer"> <![CDATA[Select * from customer where email = ? and password = ?;]]> </query>
+    <query id ="insert_customer"> <![CDATA[INSERT INTO customer(name,nic,user_name,password,address,email,contact_number) VALUES (?,?,?,?,?,?,?);]]> </query>
+    <query id ="get_all_customer"> <![CDATA[SELECT * FROM customer;]]> </query>
+    <query id ="select_customer"> <![CDATA[SELECT * FROM customer WHERE id = ?;]]> </query>
+    <query id ="delete_customer"> <![CDATA[DELETE FROM customer WHERE id = ?;]]> </query>
+    <query id ="update_customer"> <![CDATA[UPDATE customer SET name = ?, nic = ?, user_name = ?, password = ?, address = ?, email = ?, contact_number = ? WHERE id = ? ;]]> </query>
+    <query id ="count_customer"> <![CDATA[SELECT COUNT(*) FROM customer;]]> </query>
+    <query id ="get_customer_name"> <![CDATA[SELECT name FROM customer WHERE id = ?;]]> </query>
+    
+    
+    
+    <!-- FAQ Querys  -->
+    <query id ="insert_faq"> <![CDATA[INSERT INTO faq(question,answer) VALUES (?,?);]]> </query>
+    <query id ="get_all_faq"> <![CDATA[SELECT * FROM faq;]]> </query>
+    <query id ="select_faq"> <![CDATA[SELECT * FROM faq WHERE id = ?;]]> </query>
+    <query id ="delete_faq"> <![CDATA[DELETE FROM faq WHERE id = ?;]]> </query>
+    <query id ="update_faq"> <![CDATA[UPDATE faq SET question = ?, answer = ?  WHERE id = ? ;]]> </query>
+    
+    
+    
+    <!-- Request Querys  -->
+    <query id ="insert_request"> <![CDATA[INSERT INTO request(title,request,customer_id,number,agent_id) VALUES (?,?,?,?,?);]]> </query>
+    <query id ="get_all_request_by_agent"> <![CDATA[SELECT * FROM request WHERE agent_id = ? AND status = 0 ORDER BY date_time DESC;]]> </query>
+    <query id ="get_all_request_by_admin"> <![CDATA[SELECT * FROM request WHERE admin_id = ? AND status = 1 ORDER BY date_time DESC;]]> </query>
+    <query id ="get_all_request_by_manager"> <![CDATA[SELECT * FROM request WHERE manager_id = ? AND status = 2 ORDER BY date_time DESC;]]> </query>
+    <query id ="get_all_request_by_customer"> <![CDATA[SELECT * FROM request WHERE customer_id = ? ORDER BY date_time DESC;]]> </query>
+    <query id ="to_confirm_request"> <![CDATA[UPDATE request SET status = 10 WHERE id = ? ;]]> </query>
+    <query id ="to_reject_request"> <![CDATA[UPDATE request SET status = 20 WHERE id = ? ;]]> </query>
+    <query id ="agent_foward_request_to_admin"> <![CDATA[UPDATE request SET status = 1,admin_id = (SELECT id FROM admin WHERE branch_id IN (SELECT branch_id FROM agent WHERE id = ?)) WHERE id = ? ;]]> </query>
+    <query id ="admin_foward_request_to_manager"> <![CDATA[UPDATE request SET status = 2,manager_id = 1 WHERE id = ? ;]]> </query>
+    <query id ="delete_request"> <![CDATA[DELETE FROM request WHERE id = ?;]]> </query>
+ 
+    
+    
+    <!-- Chat Querys  -->
+    <query id ="send_message"> <![CDATA[INSERT INTO chat(customer_id,agent_id,message,send_by) VALUES (?,?,?,?);]]> </query>
+    <query id ="get_message_by_customer"> <![CDATA[SELECT * FROM chat where customer_id= ? order by sent_time ;]]> </query>
+    <query id ="get_customer_chat_heads"> <![CDATA[SELECT * FROM customer WHERE id in (SELECT DISTINCT customer_id FROM `chat` ORDER BY sent_time DESC);]]> </query>
+    
+    
+    
+    <!-- Branch Querys  -->
+    <query id ="insert_branch"> <![CDATA[INSERT INTO branch(name,location) VALUES (?,?);]]> </query>
+    <query id ="get_all_branch"> <![CDATA[SELECT * FROM branch;]]> </query>
+    <query id ="select_branch"> <![CDATA[SELECT * FROM branch WHERE id = ?;]]> </query>
+    <query id ="delete_branch"> <![CDATA[DELETE FROM branch WHERE id = ?;]]> </query>
+    <query id ="update_branch"> <![CDATA[UPDATE branch SET name = ?, location = ? WHERE id = ?;]]> </query>
+    <query id ="get_branch_name"> <![CDATA[SELECT name FROM branch WHERE id = ?;]]> </query>
+    <query id ="count_branch"> <![CDATA[SELECT COUNT(*) FROM branch;]]> </query>
+    
+    
+    
+</Querys>

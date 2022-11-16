@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 25, 2021, 4:15:53 AM
+    Author     : Rudy
+*/
+.custom-card-header{
+    display: flex;align-items:center;padding: 10px;background-color: #a5ccde;;border-bottom: 1px solid #aba8a8;
+}
+.custom-card-title{
+    display: flex;align-items:center;padding: 10px 0
+}
+.custom-card-details{
+    font-size: 17px;
+}
+.custom-card-topic{
+
+}
+.vertical-menu{
+    background-color: #e5eef2 !important;
+    top:53px !important;
+}
+.metismenu li:hover{
+    background-color: #ed1c24 !important;
+    color: white !important;
+}
+.page-content {
+    padding-top: 70px;
+}
+.package-details .left{
+    width: 70%
+}
+.package-details tr{
+    height: 50px
+}
+.footer {
+    bottom: 0;
+    padding: 16px calc(10px / 2);
+    position: absolute;
+    right: 0;
+    color: #fff;
+    left: 250px;
+    height: 47px;
+    background-color: #343a40;
+    border-top: 1px solid #e9e9ef;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    padding: 12px 55px 12px 55px !important;
+}
+.card {
+    border: 1px solid #9e9ea3
+}
+.card-header {
+
+    border-bottom: 1px solid #9b9b9c;
+}

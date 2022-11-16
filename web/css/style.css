@@ -1,0 +1,217 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 22, 2021, 12:32:32 AM
+    Author     : Rudy
+*/
+
+
+/*Home Page*/
+body{
+  position: relative;
+  min-height: 100vh;
+}
+.help-desk-title{
+    width: 100%;text-align: center;font-family: 'Open Sans', sans-serif;padding: 20px 20px 10px
+}
+.help-desk-title h1{
+    color: #515656;width: 100%;text-align: center;font-family: 'Open Sans'
+}
+.help-desk-sub-title{
+    color: #515656;width: 100%;text-align: center;font-family: 'Open Sans'
+}
+.help-desk-btn{
+
+}
+.help-desk-btn .btn-container{
+    background: #eef5f9;color: #757575;display: block;padding: 30px 40px;-webkit-box-shadow: 0 4px 5px 1px #E0E0E0;box-shadow: 0 4px 5px 1px #E0E0E0;
+}
+.help-desk-btn .btn-container{
+    color: #403c3c;
+}
+.btn-container:hover{
+    box-shadow: 0px 3px 15px 12px #C7C2C2;
+}
+.navbar-nav{
+    margin-left: auto !important;
+}
+.navbar-nav li{
+    padding: 0 5px;
+}
+.pink-btn{
+    background: #EF005A;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    font-weight: 400;
+    max-width: 145px;
+}
+.btn-status {
+
+    color: #fff !important;
+    background-color: #8dc63f;
+    border: 0;
+    height: 34px;
+    border-radius: 0;
+}
+.p-10{
+    padding: -10px;
+}
+.btn-container .title{
+    text-align: center;width: 100%
+}
+.display-aligned{
+    display: flex;
+    align-items:center
+}
+/*Dashboard*/
+.side-bar{
+    height: 92%;
+    position:fixed;
+    background-color: #b3bdc8 !important;
+
+}
+.nav-link.active{
+    background-color: #ed1c24 !important;
+}
+.padding-0{
+    padding: 0 !important;
+}
+/*Buttons*/
+.btn-login {
+    color: #fff !important;
+    background-color: #8dc63f;
+    border: 0;
+    text-align: center;
+    border-radius: 0;
+    padding: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 70px;
+    margin-top: 7px;
+}
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+.modal{
+    margin-left: 34% !important;
+    margin-top: 5% !important;
+
+    width: 32%;
+}
+.pkg-header{
+    display: flex;align-items:center;padding: 5px;border-bottom: 1px solid #aba8a8;
+}
+.title-section{
+    padding: 10px 10px 10px 31px;background-color: #bfbfcd;margin-bottom: 30px;
+}
+.pt-20{
+    padding-top: 20px; 
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.font-size-30{
+    font-size:30px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.pkg-validity{
+    width: 100%;text-align: left;
+}
+.pkg-data{
+    display: flex;align-items:center
+}
+.ml-auto{
+    margin-left: auto;
+}
+.pkg-price{
+    align-items:center;margin-left: auto;
+}
+.p-10{
+    padding: 10px !important
+}
+.confirmbtn{
+    color: white;
+    background-color: #8dc63f;  
+}
+.navbar{
+    padding: 12px 55px 12px 55px !important;
+}
+.nav-pills > li > a{
+    color: #fff;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+} 

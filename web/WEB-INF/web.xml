@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+    
+    <!--Start AdminServlet-->
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>Controller.AdminServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminSignin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminSignOut</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminProfilePage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminChangePassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/adminEditProfile</url-pattern>
+    </servlet-mapping>
+    <!--End AdminServlet-->
+    
+    
+    
+    
+    <!--Start AgentServlet-->
+    <servlet>
+        <servlet-name>AgentServlet</servlet-name>
+        <servlet-class>Controller.AgentServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentSignin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentSignOut</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentProfilePage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentUpdate</url-pattern> 
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentChangePassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgentServlet</servlet-name>
+        <url-pattern>/agentEditProfile</url-pattern>
+    </servlet-mapping>
+    <!--End AgentServlet-->
+    
+    
+    
+    
+    <!--Start CustomerServlet-->
+    <servlet>
+        <servlet-name>CustomerServlet</servlet-name>
+        <servlet-class>Controller.CustomerServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customerPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customerLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customerLogout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customerInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customerDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customerEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customerUpdate</url-pattern>
+    </servlet-mapping>
+    <!--End CustomerServlet-->
+    
+    
+    
+    
+    <!--Start SimServlet-->
+    <servlet>
+        <servlet-name>SimServlet</servlet-name>
+        <servlet-class>Controller.SimServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>SimServlet</servlet-name>
+        <url-pattern>/simPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimServlet</servlet-name>
+        <url-pattern>/simInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimServlet</servlet-name>
+        <url-pattern>/simDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimServlet</servlet-name>
+        <url-pattern>/simEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimServlet</servlet-name>
+        <url-pattern>/simUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimServlet</servlet-name>
+        <url-pattern>/simActive</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimServlet</servlet-name>
+        <url-pattern>/simDeactive</url-pattern>
+    </servlet-mapping>
+    <!--End CustomerServlet-->
+    
+    
+    
+    
+    <!--Start BranchServlet-->
+    <servlet>
+        <servlet-name>BranchServlet</servlet-name>
+        <servlet-class>Controller.BranchServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>BranchServlet</servlet-name>
+        <url-pattern>/branchPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BranchServlet</servlet-name>
+        <url-pattern>/branchInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BranchServlet</servlet-name>
+        <url-pattern>/branchDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BranchServlet</servlet-name>
+        <url-pattern>/branchEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BranchServlet</servlet-name>
+        <url-pattern>/branchUpdate</url-pattern>
+    </servlet-mapping>
+    <!--End BranchServlet-->
+    
+    
+       
+    
+    <!--Start PackageTypeServlet-->
+    <servlet>
+        <servlet-name>PackageTypeServlet</servlet-name>
+        <servlet-class>Controller.PackageTypeServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>PackageTypeServlet</servlet-name>
+        <url-pattern>/packageTypePage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageTypeServlet</servlet-name>
+        <url-pattern>/packageTypeInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageTypeServlet</servlet-name>
+        <url-pattern>/packageTypeDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageTypeServlet</servlet-name>
+        <url-pattern>/packageTypeEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageTypeServlet</servlet-name>
+        <url-pattern>/packageTypeUpdate</url-pattern>
+    </servlet-mapping>
+    <!--End PackageTypeServlet-->
+    
+    
+    
+    
+    <!--Start PackageServlet-->
+    <servlet>
+        <servlet-name>PackageServlet</servlet-name>
+        <servlet-class>Controller.PackageServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/packagePage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/packageInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/packageDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/packageEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/packageUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/manage_pkg</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/manageSimPackage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/simPackageActive</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/simPackageDeactive</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/ActivatePackage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PackageServlet</servlet-name>
+        <url-pattern>/DeactivatePackage</url-pattern>
+    </servlet-mapping>
+    <!--End PackageServlet-->
+  
+  
+  
+  
+    <!--Start ServicesTypeServlet-->
+    <servlet>
+        <servlet-name>ServicesTypeServlet</servlet-name>
+        <servlet-class>Controller.ServicesTypeServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>ServicesTypeServlet</servlet-name>
+        <url-pattern>/servicesTypePage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServicesTypeServlet</servlet-name>
+        <url-pattern>/servicesTypeInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServicesTypeServlet</servlet-name>
+        <url-pattern>/servicesTypeDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServicesTypeServlet</servlet-name>
+        <url-pattern>/servicesTypeEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServicesTypeServlet</servlet-name>
+        <url-pattern>/servicesTypeUpdate</url-pattern>
+    </servlet-mapping>
+    <!--End ServicesTypeServlet-->
+    
+    
+     
+     
+    <!--Start ServicesServlet-->
+    <servlet>
+        <servlet-name>ServicesServlet</servlet-name>
+        <servlet-class>Controller.ServicesServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>ServicesServlet</servlet-name>
+        <url-pattern>/servicesPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServicesServlet</servlet-name>
+        <url-pattern>/servicesInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServicesServlet</servlet-name>
+        <url-pattern>/servicesDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServicesServlet</servlet-name>
+        <url-pattern>/servicesEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServicesServlet</servlet-name>
+        <url-pattern>/servicesUpdate</url-pattern>
+    </servlet-mapping>
+    <!--End ServicesServlet-->
+    
+    
+    
+    
+    <!--Start FaqServlet-->
+    <servlet>
+        <servlet-name>FaqServlet</servlet-name>
+        <servlet-class>Controller.FaqServlet</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>FaqServlet</servlet-name>
+        <url-pattern>/faqPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FaqServlet</servlet-name>
+        <url-pattern>/faqInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FaqServlet</servlet-name>
+        <url-pattern>/faqDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FaqServlet</servlet-name>
+        <url-pattern>/faqEdit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FaqServlet</servlet-name>
+        <url-pattern>/faqUpdate</url-pattern>
+    </servlet-mapping>
+    <!--End FaqServlet-->
+    
+    
+    
+    
+    <!--Start RequestServlet-->
+    <servlet>
+        <servlet-name>RequestServlet</servlet-name>
+        <servlet-class>Controller.RequestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/requestInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/customerRequestPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/fowardRequest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/confirmRequest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/rejectRequest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/deleteRequest</url-pattern>
+    </servlet-mapping>
+
+    <!--End RequestServlet-->
+    
+    
+    
+    <!--Start ChatServlet-->
+    <servlet>
+        <servlet-name>ChatServlet</servlet-name>
+        <servlet-class>Controller.ChatServlet</servlet-class>
+    </servlet>
+    
+   
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/sendMessage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/getMessage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/getCustomerChatHead</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/getCustomerNameandImage</url-pattern>
+    </servlet-mapping>
+    <!--End ChatServlet-->
+    
+    
+    
+    
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <jsp-file>/Views/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>dashboard</servlet-name>
+        <jsp-file>/Views/dashboad.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dashboard</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>manage_package</servlet-name>
+        <jsp-file>/Views/manage_pkg.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>manage_package</servlet-name>
+        <url-pattern>/manage_package</url-pattern>
+    </servlet-mapping>
+
+    
+    <servlet>
+        <servlet-name>packages</servlet-name>
+        <jsp-file>/Views/package.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>packages</servlet-name>
+        <url-pattern>/packages</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Chat</servlet-name>
+        <jsp-file>/Views/Admin/chat_client.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Chat</servlet-name>
+        <url-pattern>/Chat</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChatAdmin</servlet-name>
+        <jsp-file>/Views/Admin/chat_admin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChatAdmin</servlet-name>
+        <url-pattern>/ChatAdmin</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet>
+        <servlet-name>faq</servlet-name>
+        <jsp-file>/Views/faq.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faq</servlet-name>
+        <url-pattern>/faq</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>inquiry</servlet-name>
+        <jsp-file>/Views/inquiry.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inquiry</servlet-name>
+        <url-pattern>/inquiry</url-pattern>
+    </servlet-mapping>
+  
+
+  
+  
+ 
+  
+  
+  
+  
+  
+    <servlet>
+        <servlet-name>indexpage</servlet-name>
+        <jsp-file>/Views/Admin/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexpage</servlet-name>
+        <url-pattern>/indexjsp</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+
+
+
+    <welcome-file-list>
+
+<!--        <welcome-file>Views/Admin/signin.jsp</welcome-file>-->
+        <welcome-file>Views/index.jsp</welcome-file>
+        <!--<welcome-file>Views/Admin/manage_admin.jsp</welcome-file>-->
+    </welcome-file-list>
+    
+    
+    
+</web-app>
